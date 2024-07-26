@@ -2042,7 +2042,9 @@ input, select, textarea {
 	color: white;
 
 }
-
+.v{
+	margin-left: 80px;
+}
 .hidden {
 	display: none;
 }
@@ -2054,6 +2056,9 @@ input, select, textarea {
 }
 @media (max-width: 768px) {
     .visible {
+        margin-left: 0;
+    }
+	.v{
         margin-left: 0;
     }
 }
