@@ -1989,18 +1989,22 @@ input, select, textarea {
 	.wrapper {
 		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		padding: 8em 0 8em 0;
+		padding: 2em 0 4em 0;
 		text-align: center;
+		height: 100vh;
 	}
 
 		.wrapper.style1 {
 			background-image: none;
 			background-color: #fff;
+		    /* height: 100%; */
+
 		}
 
 		.wrapper.style2 {
 			background-color: #fafafa;
 			text-shadow: 1px 1px 0px #fff;
+
 		}
 
 		.wrapper.style3 {
@@ -2012,6 +2016,7 @@ input, select, textarea {
 			background-color: #303030;
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
+			height: 250px;
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
@@ -2032,7 +2037,34 @@ input, select, textarea {
 				.wrapper.style4 form textarea:focus {
 					background: #252525;
 				}
+.fe{
+	color: white;
 
+}
+
+.hidden {
+	display: none;
+}
+.visible {
+	margin-left: 80px;
+	display: block;
+    opacity: 1;
+    transition: opacity 1s;
+}
+@media (max-width: 768px) {
+    .visible {
+        margin-left: 0;
+    }
+}
+.fade-out {
+	opacity: 0;
+	transition: opacity 1s;
+}
+.fade-in {
+	opacity: 0;
+	display: block;
+	transition: opacity 1s;
+}
 /* Nav */
 
 	#nav {
@@ -2105,19 +2137,20 @@ input, select, textarea {
 	}
 
 	#top {
-		padding: 10em 0 10em 0;
+		padding: 11em 0 5em 0;
 		text-align: left;
 	}
 
 		#top .image {
-			border-radius: 100%;
-			width: 20em;
-			height: 20em;
+			border-radius: 10%;
+			width: 27em;
+			height: 27em;
 			margin: 0;
+			/* padding: 5%; */
 		}
 
 			#top .image img {
-				border-radius: 100%;
+				border-radius: 10%;
 			}
 
 		#top h1 {
